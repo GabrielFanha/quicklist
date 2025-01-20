@@ -1,0 +1,36 @@
+header {
+  padding-top: 1.625rem;
+  display: flex;
+  flex-direction: column;
+  width: 39.25rem;
+
+  & img[src*="logo"] {
+    width: 9.75rem;
+    height: 2.5rem;
+    margin-inline: auto;
+    margin-bottom: 3.875rem;
+  }
+
+  & a  {
+    color: var(--color-brand);
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+    cursor: pointer;
+  }
+
+  & h1 {
+    color: var(--content-primary);
+    margin-bottom: 2.75rem;
+  }
+}
+
+@media (width < 80em) {
+  header {
+    width: 20.375rem;
+
+    & img[src*="logo"] {
+      display: none;
+    }
+  }
+}
