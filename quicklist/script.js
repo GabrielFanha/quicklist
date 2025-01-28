@@ -61,7 +61,7 @@ const Item = (item) => {
   //remove item
   trash.addEventListener("click", (e) => {
     e.preventDefault()
-    if (newli) {
+    if (input.checked) {
       newli.remove()
       danger("O item foi removido da lista")
     } else {
