@@ -1,0 +1,33 @@
+.checkbox-wrapper {
+  cursor: pointer;
+  position: relative;
+  display: flex;
+  gap: .75rem;
+  align-items: center;
+  & [type="checkbox"] {
+    all: unset;
+    position: absolute;
+    inset: 0;
+  }
+
+  & .checkbox-image{
+    flex: 0 0 1.5rem;
+    height: 1rem;
+
+    background-image: url("../assets/icons/checkDefault.svg");
+    background-repeat: no-repeat;
+    color: var(--color-brand);
+
+    &:hover {
+      background-image: url("../assets/icons/checkHover.svg");
+    }
+  }
+
+
+  
+
+}
+
+li:has(:checked) .checkbox-image {
+  background-image: url("../assets/icons/checkSelected.svg");
+}
